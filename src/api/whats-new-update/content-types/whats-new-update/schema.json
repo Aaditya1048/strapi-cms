@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whats_new_updates",
+  "info": {
+    "singularName": "whats-new-update",
+    "pluralName": "whats-new-updates",
+    "displayName": "Whats New Update"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "publishDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "time": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "TRADING",
+        "MUTUALFUNDS",
+        "OPTIONS",
+        "MARKETS",
+        "OTHER"
+      ]
+    },
+    "categoryPrimaryColor": {
+      "type": "string"
+    },
+    "categoryBgColor": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "productType": {
+      "type": "string"
+    },
+    "howToAccessIntro": {
+      "type": "text"
+    },
+    "howToAccessSteps": {
+      "type": "json"
+    },
+    "readMoreUrl": {
+      "type": "string"
+    },
+    "hasImage": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasVideo": {
+      "type": "boolean",
+      "default": false
+    },
+    "sunsetted": {
+      "type": "boolean",
+      "default": false
+    },
+    "sunsettedMessage": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "media_url": {
+      "type": "string"
+    }
+  }
+}

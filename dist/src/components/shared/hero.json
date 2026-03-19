@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_shared_heroes",
+    "info": {
+        "displayName": "Hero"
+    },
+    "options": {},
+    "attributes": {
+        "small_title": {
+            "type": "string"
+        },
+        "main_title": {
+            "type": "string"
+        },
+        "carousel_text": {
+            "type": "component",
+            "component": "shared.carousel-text",
+            "repeatable": true
+        },
+        "hero_description": {
+            "type": "text"
+        }
+    },
+    "config": {}
+}
